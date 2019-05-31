@@ -24,8 +24,16 @@ ul li a, figcaption a {
 of the header element */
 header > img {
   width: 100px;
+  float: left;
 }
 
+.pseudo-stop-float:after {
+content: "";
+background: red;
+display: block;
+clear: left;
+
+}
 /* Selects all elements with the class attribute "ingredients-list" */
 .ingredients-list {
 
@@ -73,11 +81,11 @@ h2 + .user_review {
 }
 
 nav {
-    display: inline-block;
+    float: right;
 }
 
 nav ul li {
-    display:  inline-block;
+  display: inline-block;
 }
 
 nav ul li a {
